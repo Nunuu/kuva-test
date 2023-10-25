@@ -25,7 +25,3 @@ pnpm build
 
 - use vector based SVGs when possible
 - avoid using PNGs unless a transparent background is needed
-
-## Questions
-
-1. What is an image metadata? What properties should be displayed?
