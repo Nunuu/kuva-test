@@ -2,7 +2,7 @@ import { ArrowBackIcon, ArrowForwardIcon } from '@chakra-ui/icons';
 import { Box, Button, Center, Flex, Spacer, Text } from '@chakra-ui/react';
 import { useState } from 'react';
 
-interface Image {
+interface Scan {
 	id: string;
 	createdOn: string;
 	src: string;
@@ -10,7 +10,7 @@ interface Image {
 }
 
 interface ImageGalleryProps {
-	images: Image[];
+	images: Scan[];
 }
 
 function ImageGallery({ images }: ImageGalleryProps) {
@@ -41,8 +41,8 @@ function ImageGallery({ images }: ImageGalleryProps) {
 						<Text> Index: {currentImageIndex} </Text>
 					</Flex>
 					<Box
-						width="360"
-						height="400"
+						w="100%"
+						h="400"
 						position="relative"
 						backgroundPosition="center"
 						backgroundRepeat="no-repeat"
